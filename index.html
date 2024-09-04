@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Style CSS  -->
+   <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <!-- FONTAWESON -->
+  <script src="https://kit.fontawesome.com/5a2708db94.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="wrapper-desert">
+    <h2>Deserts</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/images/image-waffle-desktop.jpg" alt="">
+        <div class="btn-content">
+          <button class="btn_add_card"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <div class="quantity_btn">
+            <i class="fa-solid fa-minus minus"></i> 
+              <span class="quantity">1</span>
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+        </div>
+        <div class="details">
+          <p  class="category">Waffle</p>
+          <h3 class="food">Waffle with Bernies</h3>
+          <h2 class="price">$6.50</h2>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/image-creme-brulee-desktop.jpg" alt="">
+        <div class="btn-content">
+          <button class="btn_add_card"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <div class="quantity_btn">
+            <i class="fa-solid fa-minus minus"></i> 
+              <span class="quantity">1</span>
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+        </div>
+        <div class="details">
+          <p  class="category">Crème Brûlée</p>
+          <h3 class="food">Vanilla Bean Crème Brulée</h3>
+          <h2 class="price">$7.00</h2>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/image-macaron-desktop.jpg" alt="" >
+        <div class="btn-content">
+          <button class="btn_add_card"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <div class="quantity_btn">
+            <i class="fa-solid fa-minus minus"></i> 
+              <span class="quantity">1</span>
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+        </div>
+        <div class="details">
+          <p class="category">Macaron</p>
+          <h3 class="food"> Macaron Mix of Five</h3>
+          <h2 class="price">$8.00</h2>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/image-tiramisu-desktop.jpg" alt="" >
+        <div class="btn-content">
+          <button class="btn_add_card"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <div class="quantity_btn">
+            <i class="fa-solid fa-minus minus"></i> 
+              <span class="quantity">1</span>
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+        </div>
+        <div class="details">
+          <p class="category">Tiramisu</p>
+          <h3 class="food">Classic Tiramisu</h3>
+          <h2 class="price">$5.50</h2>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/image-baklava-desktop.jpg" alt="" >
+        <div class="btn-content">
+          <button class="btn_add_card"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <div class="quantity_btn">
+            <i class="fa-solid fa-minus minus"></i> 
+              <span class="quantity">1</span>
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+        </div>
+        <div class="details">
+          <p class="category">Baklava</p>
+          <h3 class="food">Pistachio Baklava</h3>
+          <h2 class="price">$4.00</h2>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/image-meringue-desktop.jpg" alt="" >
+        <div class="btn-content">
+          <button class="btn_add_card"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <div class="quantity_btn">
+            <i class="fa-solid fa-minus minus"></i> 
+              <span class="quantity">1</span>
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+        </div>
+        <div class="details">
+          <p class="category">Pie</p>
+          <h3 class="name_food">Lemon Meringue Pie</h3>
+          <h2 class="price">$5.00</h2>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/image-cake-desktop.jpg" alt="" >
+        <div class="btn-content">
+          <button class="btn_add_card"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <div class="quantity_btn">
+            <i class="fa-solid fa-minus minus"></i> 
+              <span class="quantity">1</span>
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+        </div>
+        <div class="details">
+          <p class="category">Cake</p>
+          <h3 class="name_food">Red Velvet Cake</h3>
+          <h2 class="price">$4.50</h2>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/image-brownie-desktop.jpg" alt="" >
+        <div class="btn-content">
+          <button class="btn_add_card"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <div class="quantity_btn">
+            <i class="fa-solid fa-minus minus"></i> 
+              <span class="quantity">1</span>
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+        </div>
+        <div class="details">
+          <p class="category">Brownie</p>
+          <h3 class="name_food">Salted Caramel Brownie</h3>
+          <h2 class="price">$4.50</h2>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/image-panna-cotta-desktop.jpg" alt="" >
+        <div class="btn-content">
+          <button class="btn_add_card"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <div class="quantity_btn">
+            <i class="fa-solid fa-minus minus"></i> 
+              <span class="quantity">1</span>
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+        </div>
+        <div class="details">
+          <p class="category">Panna Cotta</p>
+          <h3 class="name_food">Vanilla Panna Cotta</h3>
+          <h2 class="price">$6.50</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section your order -->
+  <div class="wrapper-total_price">
+    <h2>Your Cart(<span>0</span>)</h2>
+    <div class="items-card">
+      <img src="assets/images/illustration-empty-cart.svg" alt="">
+      <p>Your added items will appear here</p>
+    </div>
+
+    <!-- Section Panier -->
+    <div class="panier">
+      <div class="card_shop">
+        <div class="shop">
+          <h4>Classic Tiramisu</h4>
+          <p>
+            <span class="number_add">1x</span>
+            <span class="price">$5.50</span>
+            <span class="total-price">$5.50</span>
+          </p>
+        </div>
+        <button class="btn_remove"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <hr>
+      <div class="card_shop">
+        <div class="shop">
+          <h4>Classic Tiramisu</h4>
+          <p>
+            <span class="number_add">1x</span>
+            <span class="price">$5.50</span>
+            <span class="total-price">$5.50</span>
+          </p>
+        </div>
+        <button class="btn_remove"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <hr>
+      <div class="card_shop">
+        <div class="shop">
+          <h4>Classic Tiramisu</h4>
+          <p>
+            <span class="number_add">1x</span>
+            <span class="price">$5.50</span>
+            <span class="total-price">$5.50</span>
+          </p>
+        </div>
+        <button class="btn_remove"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="order-total">
+        <p>Order total : </p>
+        <span class="total">$16.50</span>
+      </div>
+      <div class="bouttons">
+        <button><img src="assets/images//icon-carbon-neutral.svg" alt=""> This is a <span class="bold"> carbone-neutral </span> delivery</button>
+        <button class = "btn-confirm-order">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- Section Order confirm -->
+<div class="order-confirm">
+  <img src="assets/images/icon-order-confirmed.svg" alt="" srcset="">
+  <div class="form-order-confirm">
+    <h4>Order confirmed</h4>
+    <p>We hope you enjoy your food!</p>
+    <div class="details-order">
+      <div class="order-infos-details">
+        <div class="order">
+          <div class="img-order">
+            <img src="assets//images/image-tiramisu-desktop.jpg" alt="">
+          </div>
+          <div class="infos-order">
+            <h3>Classic Tiramisu</h3>
+            <p>
+              <span class="number_add">1x</span>
+              <span class="price">$5.50</span>
+            </p>
+          </div>
+        </div>
+        <span class="total-price">$5.50</span>
+      </div>
+      <hr>
+      <div class="order-infos-details">
+        <div class="order">
+          <div class="img-order">
+            <img src="assets//images/image-tiramisu-desktop.jpg" alt="">
+          </div>
+          <div class="infos-order">
+            <h3>Classic Tiramisu</h3>
+            <p>
+              <span class="number_add">1x</span>
+              <span class="price">$5.50</span>
+            </p>
+          </div>
+        </div>
+        <span class="total-price">$5.50</span>
+      </div>
+    </div>
+  </div>
+  <div class="btn1">
+    <button class="btn-confirm-order ">Start New Order</button>
+  </div>
+  
+</div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -173,13 +173,14 @@
 
   <!-- Section your order -->
   <div class="wrapper-total_price">
-    <h2>Your Cart(<span>0</span>)</h2>
+    <h2>Your Cart(<span class="quantity_value">0</span>)</h2>
     <div class="items-card">
       <img src="assets/images/illustration-empty-cart.svg" alt="">
       <p>Your added items will appear here</p>
     </div>
 
     <!-- Section Panier -->
+     
     <div class="panier">
       <div class="card_shop">
         <div class="shop">
@@ -216,6 +217,8 @@
         </div>
         <button class="btn_remove"><i class="fa-solid fa-xmark"></i></button>
       </div>
+    </div>
+    <div class="btn-and-totalprice">
       <div class="order-total">
         <p>Order total : </p>
         <span class="total">$16.50</span>
@@ -269,7 +272,11 @@
     </div>
   </div>
   <div class="btn1">
-    <button class="btn-confirm-order ">Start New Order</button>
+    <div class="order-total">
+      <p>Order total : </p>
+      <span class="total_order">$16.50</span>
+    </div>
+    <button class="btn-confirm-order new_order">Start New Order</button>
   </div>
   
 </div>
@@ -278,16 +285,9 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">@aurel0123</a>.
   </div>
 
   <script src="main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-

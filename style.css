@@ -21,11 +21,12 @@ body{
     background-color: var(--Rose-100);
     align-items: center;
     height: 100vh;
+    
 }
 
 .container{
     display: flex;
-    margin: 4rem 5rem;
+    margin: 4rem 3rem;
    
 }
 .container .wrapper-desert{
@@ -70,7 +71,7 @@ body{
     outline: none;
     background-color: var(--white);
     border-radius: 50px;
-    padding: 10px 2rem;
+    padding: 10px 1rem;
     cursor: pointer;
     font-size: 16px;
     transition: 0.5s ease;
@@ -81,6 +82,7 @@ body{
     color: var(--Red);
     margin-right: 10px;
 }
+
 .btn-content button:hover{
     background-color: var(--Rose-300);
     color: var(--white);
@@ -123,10 +125,10 @@ body{
 .wrapper-total_price{
     background-color: var(--Rose-50);
     width: 100%;
-    padding: 16px 20px;
+    padding: 10px 15px;
     border-radius: 12px;
     margin-top: 30px;
-    height: 450px;
+    height: fit-content;
 }
 .wrapper-total_price h2{
     font-size: 18px;
@@ -150,6 +152,9 @@ body{
 .panier{
     display: none;
     flex-direction: column;
+}
+.btn-and-totalprice{
+    display: none;
 }
 .card_shop {
     display: flex;
@@ -246,7 +251,7 @@ hr {
     width: 450px;
     border-radius: 10px;
     padding: 10px 20px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -297,4 +302,26 @@ hr {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    flex-direction: column;
+}
+.btn1 .order-total{
+    width: 100%;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 375px ) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .wrapper-desert .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .wrapper-total_price{
+        width: 100%;
+    }
+    .order-confirm{
+        width: 350px;
+    }
 }
